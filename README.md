@@ -43,7 +43,7 @@ mi-portfolio/
 ├── index.html              # Documento HTML base
 ├── package.json            # Dependencias y scripts
 └── vite.config.js          # Configuración de Vite
-```[cite: 2, 8, 9]
+```
 
 ## Instalación y ejecución local
 
