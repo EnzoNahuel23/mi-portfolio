@@ -1,0 +1,35 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color:  rgba(161, 3, 240, 0.055);
+  padding: 1rem 10rem;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.redes {
+  display: flex;
+  gap: 2rem;
+}
+
+.redes a {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.redes-img {
+  background-color: #ffffff;
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 50%;
+}

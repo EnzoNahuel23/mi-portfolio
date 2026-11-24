@@ -1,0 +1,38 @@
+.works{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 5rem;
+}
+
+.work-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: rgba(161, 3, 240, 0.055);
+}
+
+.work-item:hover{
+    background-color: rgba(161, 3, 240, 0.4);
+}
+
+.work-item img {
+    width: 300px;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.work-item h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
