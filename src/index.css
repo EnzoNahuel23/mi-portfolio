@@ -1,4 +1,11 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
   margin-top: 5rem;
   font-family: system-ui, -apple-system, sans-serif;
   line-height: 1.5;
@@ -8,4 +15,21 @@ body {
     radial-gradient(circle at 50% 0%, rgba(161, 3, 240, 0.14), transparent 80%);
   background-size: 100% 100%, 36px 36px, 36px 36px;
   min-height: 100vh;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    margin-top: 1rem;
+  }
 }

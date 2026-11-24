@@ -1,20 +1,25 @@
 .footer {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color:  rgba(161, 3, 240, 0.055);
-  padding: 1rem 10rem;
+  gap: 1rem;
+  background-color: rgba(161, 3, 240, 0.055);
+  padding: 1.5rem clamp(1rem, 5vw, 10rem);
   text-align: center;
 }
 
-.footer-text {
-  font-size: 14px;
+.footer-text h2 {
+  font-size: 1rem;
   color: #ffffff;
+  margin: 0;
 }
 
 .redes {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -26,10 +31,28 @@
   color: #ffffff;
 }
 
+.redes p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
 .redes-img {
   background-color: #ffffff;
   width: 30px;
   height: 30px;
+  flex-shrink: 0;
   transition: transform 0.3s ease-in-out;
   border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem 1rem;
+  }
+
+  .redes {
+    gap: 1.5rem;
+  }
 }
